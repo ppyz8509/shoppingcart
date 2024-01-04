@@ -1,4 +1,0 @@
-export const ADD_PRODUCT = "ADD_PRODUCT";
-export const ADD_QUANTITY = "ADD_QUANTITY";
-export const REMOVE_QUNATITY = "REMOVE_QUNATITY";
-export const FILTER_BY_CATEDORY = "FILTER_BY_CATEDORY";

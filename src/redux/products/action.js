@@ -1,32 +1,34 @@
-import {
+import { 
     ADD_PRODUCT,
     ADD_QUANTITY,
-    REMOVE_QUNATITY,
-    FILTER_BY_CATEDORY,
-} from "./actionTypes";
+    REMOVE_QUANTITY,
+    FILTER_BY_CATEGORY,
+ } from "./actionType";
 
-export const addProduct = (productId , qunatity) => {
-    return {
-        type : ADD_PRODUCT,
-        payload :{productId, qunatity},
-    }
-}
+ export const addProduct = (product) =>{
+    return{
+        type:ADD_PRODUCT,
+        payload: product,
+    };
+ };
 
-export const addQunatity = (productId,qunatity) => {
-    return {
-        type : ADD_QUANTITY,
-        payload :{productId, qunatity},
+ export const addQuantity = (productId, quantity) =>{
+    return{
+        type:ADD_QUANTITY,
+        payload: {productId, quantity},
+    };
+ };
+
+ export const removeQuantity = (productId) =>{
+    return{
+        type:REMOVE_QUANTITY,
+        payload:productId,
+    };
+ };
+
+ export const filterCategory = (filter) =>{
+    return{
+        type:FILTER_BY_CATEGORY,
+        payload:{filter},
     }
-}
-export const removeQunatity = (productId,qunatity) => {
-    return {
-        type : REMOVE_QUNATITY,
-        payload :{productId, qunatity},
-    }
-}
-export const filterByCategory = (productId,qunatity) => {
-    return {
-        type : FILTER_BY_CATEDORY,
-        payload :{productId, qunatity},
-    }
-}
+ }

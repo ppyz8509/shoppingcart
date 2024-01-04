@@ -1,17 +1,24 @@
 import React from "react";
 import AddProduct from "./AddProduct";
 import { useSelector } from "react-redux";
+import Productitem from "./Productitem";
 
-function Home() {
-    const products = useSelector((state) => state.products);
-    console.log(products.products);
+const Home = () => {
+  const products = useSelector((state) => state.products);
   return (
     <div>
       <main className="py-8 max-w-7xl mx-auto px-4">
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-8">
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-1">
           <div className="col-span-2">
             <div className="grid md:grid-cols-2 gap-y-10 grid-cols-1">
-              <div className="card card-compact w-96 bg-base-100 shadow-xl">
+              {products.length ? (
+                products.map((product, index) => {
+                  return <Productitem products={product} key={index} />;
+                })
+              ) : (
+                <div>No Product Found</div>
+              )}
+              <div className="card w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
                     src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -26,8 +33,7 @@ function Home() {
                   </div>
                 </div>
               </div>
-
-              <div className="card card-compact w-96 bg-base-100 shadow-xl">
+              <div className="card w-96 bg-base-100 shadow-xl">
                 <figure>
                   <img
                     src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -43,12 +49,14 @@ function Home() {
                 </div>
               </div>
             </div>
-            <AddProduct/>
+          </div>
+          <div>
+            <AddProduct />
           </div>
         </div>
       </main>
     </div>
   );
-}
+};
 
 export default Home;
