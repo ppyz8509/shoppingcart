@@ -54,7 +54,7 @@
 }
 
 .submit:hover {
-  background-color: rgb(23 28 42 / 0.8);
+  background-color: rgba(128, 135, 149, 0.8);
 }
 
 .submit:active {
@@ -180,7 +180,7 @@
 }
 
 .placeOrderbtn:hover {
-  background-color: rgb(23 28 42 / 0.8);
+  background-color: rgba(177, 186, 212, 0.8);
 }
 
 .placeOrderbtn:active {
