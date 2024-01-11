@@ -5,10 +5,10 @@ import pageReducer from './pages/pageReducer'
 
 
 export const store = configureStore({
-    reducer: {
+  reducer: {
       products: productReducer,
       carts: cartReducer,
-      page:pageReducer,
-    },
-    devTools:true
-  })
+      pages: pageReducer,
+  },
+  devTools: true,
+})
