@@ -1,14 +1,14 @@
 export const initialState = [
   {
     id: 6,
-    image: "https://instagram.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/411058465_18248834674226053_3167673463035258456_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xMjUweDE1NjIuc2RyIn0&_nc_ht=instagram.fbkk29-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=8P5vGDaywasAX-J3oVi&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzI1ODE5ODAyNjM1MDg3NjkzMA%3D%3D.2-ccb7-5&oh=00_AfCPqr-JocCnFLEoEj9MQpdI6pxAaBURmGESb-3RUgQpVQ&oe=659F26B7&_nc_sid=b41fef",
+    image: "https://driporaclothing.com/cdn/shop/products/1_500b86e3-4de4-4414-8361-0fedc079db6d.jpg?v=1674635326",
     name: "STA thorns S star hoodie ",
     category: "Gedgets",
     price: 2800.00,
     quantity: 50,
   },{
     id: 1,
-    image: "https://instagram.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/408031855_18247938379226053_7692008590605713113_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi43NjB4NzYwLnNkciJ9&_nc_ht=instagram.fbkk29-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=mRHGwG8YF68AX-ajNav&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzI1MzI4NjQ5NTY2MjEyNzQzMA%3D%3D.2-ccb7-5&oh=00_AfA-G895O0OY7CdMKWEzvJOx5xICnZumB2qXCy2qLjwm3Q&oe=659EF3CE&_nc_sid=b41fef",
+    image: "https://www.leenhiboutique.us/cdn/shop/files/83008244-79AE-4327-80DE-67AE84A50B17.jpg?v=1699958150&width=713",
     name: "CAT&SOFA Meow Meow sneakers",
     category: "Clothing",
     price: 2700.00,
@@ -41,8 +41,8 @@ export const initialState = [
     },
     {
       id: 5,
-      image: "https://instagram.fbkk29-1.fna.fbcdn.net/v/t39.30808-6/368293125_18231712381226053_8390745496536778852_n.jpg?stp=dst-jpg_e15&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi43NTl4NzU5LnNkciJ9&_nc_ht=instagram.fbkk29-1.fna.fbcdn.net&_nc_cat=101&_nc_ohc=W4gCkZcxw54AX-GVOAf&edm=ABmJApAAAAAA&ccb=7-5&ig_cache_key=MzE3MTQ0NzEyOTY1NTA1NTY3OA%3D%3D.2-ccb7-5&oh=00_AfDlIg6J40UkTkpYEDAOquKpctBXiHGXf2jikou2_ABuqw&oe=659D7EC9&_nc_sid=b41fef",
-      name: "Blackness × BLACKDEGREE Gold Coin Smiley Titanium Steel Rings",
+      image: "https://img.fruugo.com/product/6/67/874632676_max.jpg",
+      name: "Men's Rings Titanium Steel Cross Ring Simple Men's Jewelry",
       category: "Clothing",
       price: 4590.00,
       quantity: 50,

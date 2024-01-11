@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 
 
 const Navbar = () => {
@@ -8,6 +8,12 @@ const Navbar = () => {
   // นับจำนวน
   const cartsItemNo = carts.reduce(
     (total, product) => total + product.quantity, 0);
+    const distpatch = useDispatch();
+    const handlePageChange = (type)=>{
+      distpatch({
+        type
+      })
+    }
   return (
     <nav className=" bg-blue-100">
       <div className="navbar bg-base-100 bg-white-400">
@@ -16,13 +22,14 @@ const Navbar = () => {
         </div>
         <div className="flex-none">
             <div className="dropdown dropdown-end font-samibol">
-                <button>Home</button>
+                <button onClick={()=> handlePageChange("Home")}>Home</button>
                 </div>
           <div className="dropdown dropdown-end">
             <div
               tabIndex={0}
               role="button"
               className="btn btn-ghost btn-circle"
+              onClick={()=> handlePageChange("Cart")}
             >
               <div className="indicator">
                 <svg
